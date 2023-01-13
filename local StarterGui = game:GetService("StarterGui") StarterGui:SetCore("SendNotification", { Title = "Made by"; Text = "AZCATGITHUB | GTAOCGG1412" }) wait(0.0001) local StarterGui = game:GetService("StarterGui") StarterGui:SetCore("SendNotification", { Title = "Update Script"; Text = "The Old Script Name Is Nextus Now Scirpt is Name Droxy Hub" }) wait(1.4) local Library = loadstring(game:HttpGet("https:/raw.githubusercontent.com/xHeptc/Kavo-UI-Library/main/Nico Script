@@ -1,0 +1,99 @@
+local StarterGui = game:GetService("StarterGui")
+StarterGui:SetCore("SendNotification", {
+Title = "Made by";
+Text = "AZCATGITHUB | GTAOCGG1412"
+})
+wait(0.0001)
+local StarterGui = game:GetService("StarterGui")
+StarterGui:SetCore("SendNotification", {
+Title = "Update Script";
+Text = "The Old Script Name Is Nextus Now Scirpt is Name Droxy Hub"
+})
+wait(1.4)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Droxy Hub | nico's nextbots", colors)
+local Tab = Window:NewTab("Auto Farm")
+local Section = Tab:NewSection("Auto Farm")
+
+Section:NewButton("Auto Farm", "ButtonInfo", function(fd)
+while true do
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(186.406494, 102.736244, 295.025085, 1, -1.87021221e-09, 1.62588332e-16, 1.87021221e-09, 1, -7.26257887e-10, -1.61230075e-16, 7.26257887e-10, 1)}):Play()
+wait(2)
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-1088.60632, 39.09972, -62.2372169, 0.999988794, -3.07806271e-13, -0.00472844765, 3.10414997e-13, 1, 5.50975986e-13, 0.00472844765, -5.52437653e-13, 0.999988794)}):Play()
+wait(2)
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-96.5088196, 79.9999771, -524.294678, 0.112721018, 9.24408466e-12, -0.993626654, 2.08666001e-11, 1, 1.16705699e-11, 0.993626654, -2.20491299e-11, 0.112721018)}):Play()
+wait(3)
+local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-616.021362, -6.38525057, -29.0259361, -0.0275309067, 0, 0.999620974, 0, 1, -0, -0.999620974, 0, -0.0275309067)}):Play()
+wait(3)
+end
+end)
+
+Section:NewButton("Disable Auto Farm", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart:Destroy()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+local Tab = Window:NewTab("Walk Speed Setting")
+local Section = Tab:NewSection("Local Speed")
+
+Section:NewButton("125 Walk Speed", "ButtonInfo", function()
+while true do
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 125
+wait(0.1)
+end
+end)
+
+Section:NewButton("Super Fast Walk Speed", "ButtonInfo", function()
+while true do
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 455
+wait(0.1)
+end
+end)
+
+Section:NewButton("Normal Boost Walk Speed", "ButtonInfo", function()
+while true do
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 65
+wait(0.1)
+end
+end)
+
+Section:NewButton("Normal  Walk Speed", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+local Tab = Window:NewTab("Setting")
+local Section = Tab:NewSection("Setting")
+
+Section:NewKeybind("Toggle Gui", "KeybindInfo", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
+
+Section:NewColorPicker("Nothing", "Color Info", Color3.fromRGB(0,0,0), function(color)
+    print(color)
+local colors = {
+    SchemeColor = Color3.fromRGB(0,255,255),
+    Background = Color3.fromRGB(0, 0, 0),
+    Header = Color3.fromRGB(0, 0, 0),
+    TextColor = Color3.fromRGB(255,255,255),
+    ElementColor = Color3.fromRGB(20, 20, 20)
+}
+end)
+
+local Tab = Window:NewTab("Verison")
+local Section = Tab:NewSection("You are use new verison")
+Section:NewLabel("Next Update Will Add Teleport Function")
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Thank For Use My Script")
+Section:NewLabel("Script by GTAOCGG1412 | Mexricker")
+Section:NewLabel("Twitter Name --> Cat Script")
+Section:NewLabel("On Git hub raw name --> AZCATGITHUB")
+Section:NewLabel("On Pestebin Name --> AZCAT")
